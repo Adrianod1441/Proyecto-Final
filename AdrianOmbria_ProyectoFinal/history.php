@@ -22,7 +22,7 @@
             <center><h1>Historial de compra</h1>
                 <table class="table">
                     <thead style="background: #383838; color: #fff; width: 80px;">
-                        <th>ID</th>
+                        <th>Nº Compra</th>
                         <th>Usuario</th>
                         <th>Fecha</th>
                         <th>Precio Total</th>
