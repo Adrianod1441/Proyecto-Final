@@ -1,0 +1,17 @@
+<?php
+$id=$_GET["id"];
+$host_db = "localhost";
+$user_db = "root";
+$pass_db = "";
+$db_name = "oblectatio";
+$tbl_name = "juguete";
+$mysqli = mysqli_connect($host_db, $user_db, $pass_db, $db_name);
+
+
+$stmt = $mysqli->prepare("DELETE FROM $tbl_name WHERE id = ?");
+        $stmt->bind_param('s', $id);
+        
+        $result=$stmt->execute(); ;
+        header("Location: ../toys.php");        
+
+?>

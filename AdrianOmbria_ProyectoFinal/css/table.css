@@ -1,0 +1,75 @@
+@import 'nav.css';
+
+/* historial */
+
+.collection-containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+    font-family: 'roboto', sans-serif;
+    padding-top: 20px;
+}
+
+.containerr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.table {
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    
+}
+
+.table th {
+    padding: 12px 15px;
+    line-height: 1.43;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr.active-row {
+    font-weight: bold;
+}
+
+.form-control {
+    display: block;
+    height: 70px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    color: #383838;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.01);
+    padding: 20px;
+    opacity: 1;
+    color: currentColor;
+}
+
+h1 {
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,167 @@
+@import 'nav.css';
+
+/* lista de usuarios */
+
+.table {
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    position: relative;
+    left: 0%;
+    top: 50px;
+}
+
+.table thead tr {
+    background-color: #3f51b5;
+    color: #ffffff;
+}
+
+.table th {
+    padding: 12px 15px;
+    line-height: 1.43;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table tbody tr.active-row {
+    font-weight: bold;
+    color: #3f51b5;
+}
+
+
+/* lista de juguetes */
+
+.table2 {
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    letter-spacing: 0.01071em;
+    width: 100%;
+    text-align: left;
+    border-radius: 10px;
+    border: 1px solid #dddddd;
+    position: relative;
+    left: 0%;
+    top: 50px;
+}
+
+.table2 thead tr {
+    background-color: #3f51b5;
+    color: #ffffff;
+}
+
+.table2 th {
+    padding: 12px 15px;
+    line-height: 1.43;
+}
+
+.table2 tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.table2 tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table2 tbody tr.active-row {
+    font-weight: bold;
+    color: #00b11d;
+}
+
+.btn-edit {
+    color: #fff;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 10px;
+    font-size: 0.8125rem;
+    width: 80px;
+    height: 40px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.btn-delete {
+    color: #fff;
+    background-color: #d31710;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 10px;
+    font-size: 0.8125rem;
+    width: 80px;
+    height: 40px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+}
+
+.btn-add {
+    color: #fff;
+    background-color: #3f51b5;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 10px;
+    font-size: 1rem;
+    width: 180px;
+    height: 50px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    position: relative;
+    left: 90%;
+    top: 45px;
+}
+
+.form-control {
+    padding: 9.5px 4px;
+    opacity: 1;
+    font: inherit;
+    color: currentColor;
+    border: 1px solid #dddddd;
+    width: 180px;
+    height: 40px;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 5px;
+    top: 50px;
+    font-size: 15px;
+}
+
+h1 {
+    padding-top: 25px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+
+a {
+    text-decoration: none;
+}
