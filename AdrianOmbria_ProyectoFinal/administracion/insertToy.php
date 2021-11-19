@@ -28,7 +28,7 @@
                 </select>
                 <input id="codigo" type="text" name="codigo" placeholder="El codigo *" required="required">
                 <input id="lugarcreacion" type="text" name="lugarcreacion" placeholder="El lugar de creacion *" required="required">
-                <input id="precio" type="number" name="precio" placeholder="El precio *" required="required">
+                <input id="precio" type="float" name="precio" placeholder="El precio *" required="required">
                 <input id="descripcion" type="text" name="descripcion" placeholder="La descripcion *" required="required">
                 <input id="base64" type="hidden" name="base64">
                 <h3>Imagen</h3>

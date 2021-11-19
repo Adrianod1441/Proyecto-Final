@@ -40,7 +40,7 @@
                             <td><input class="form-control" style="width: 170px;" id="idusuario" readonly="readonly" name="idusuario" type="text" value="<?php echo $p['id_usuario']?>"></td>
                             <td><input class="form-control" style="width: 240px;" id="fecha" readonly="readonly" name="fecha" type="timestamp" value="<?php echo $p['fecha']?>"></td>
                             <td><input class="form-control" style="width: 170px;" id="preciototal" readonly="readonly" name="preciototal" type="float" value="<?php echo $p['preciototal']?>€"></td>
-                            <td><input class="form-control" style="width: 300px;" id="direccion" readonly="readonly" name="direccion" type="float" value="<?php echo $p['direccion']?>"></td>
+                            <td><input class="form-control" style="width: 300px;" id="direccion" readonly="readonly" name="direccion" type="text" value="<?php echo $p['direccion']?>"></td>
                             <td style=" background-color: #fff;">
                                 <a href="" style="text-decoration: none;"><img src="img/ojo.png" id="vista" alt="" style="width: 50px; height: 30px;"></a>
                             </td>
