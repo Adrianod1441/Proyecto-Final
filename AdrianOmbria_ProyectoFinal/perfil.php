@@ -47,7 +47,7 @@
                 <h3>Contraseña Antigua</h3> <input id="password" type="password" name="password" placeholder="Escriba aqui su antigua contraseña...">
                 <h3>Contraseña Nueva</h3> <input id="passwordNueva" type="password" name="passwordNueva" placeholder="Escriba aqui su nueva contraseña...">
 
-                <button class="submit-btn" type="submit">Editar contrasena</button>
+                <button class="submit-btn" type="submit">Editar contraseña</button>
             </form>
 
                 <button class="submit-dlt" onclick="confirmarBaja()">Darse de baja</button>
