@@ -52,7 +52,7 @@
                     <td><input class="form-control" id="tipo" name="tipo" type="text" value="<?php echo $p['tipo']?>"></td>
                     <td><input class="form-control" id="codigo" name="codigo" type="text" value="<?php echo $p['codigo']?>"></td>
                     <td><input class="form-control" id="lugarcreacion" name="lugarcreacion" type="text" value="<?php echo $p['lugarcreacion']?>"></td>
-                    <td><input class="form-control" id="precio" name="precio" type="float" value="<?php echo $p['precio']?>"></td>
+                    <td><input class="form-control" id="precio" name="precio" type="float" value="<?php echo $p['precio']?>€"></td>
                     <td><input class="form-control" id="descripcion" name="descripcion" type="text" value="<?php echo $p['descripcion']?>"></td>
                     <td>
                         <button class="btn-edit" type="submit">Editar</button>
