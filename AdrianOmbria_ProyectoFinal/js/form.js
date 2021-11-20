@@ -14,39 +14,39 @@ const age = document.querySelector('#edad');
 const tac = document.querySelector('#terms-and-cond');
 
 submitBtn.addEventListener('click', () => {
-    if (nick.value.lenght < 3) {
-        showAlert('el nick debe tener mas de 3 caracteres');
-    } else if (!email.value.lenght) {
-        showAlert('escribe tu email');
-    } else if (password.value.lenght < 8) {
-        showAlert('la contraseña debe tener mas de 8 caracteres');
-    } else if (!nombre.value.lenght) {
-        showAlert('escribe tu nombre');
-    } else if (!surnames.value.lenght) {
-        showAlert('escribe tus apellidos');
-    } else if (!direction.value.lenght) {
-        showAlert('escribe tu direccion');
-    } else if (!phone.value.lenght) {
-        showAlert('escribe tu telefono');
-    } else if (!age.value.lenght) {
-        showAlert('escribe tu edad');
-    } else if (dni.value.lenght < 9) {
-        showAlert('el dni debe tener 9 caracteres');
+    if (nick.value.length < 3) {
+        showAlert('El nick debe tener mas de 3 caracteres');
+    } else if (password.value.length < 8) {
+        showAlert('La contraseña debe tener mas de 8 caracteres');
+    }  else if (!nombre.value.length) {
+        showAlert('Escribe tu nombre');
+    } else if (!surnames.value.length) {
+        showAlert('Escribe tus apellidos');
+    } else if (!direction.value.length) {
+        showAlert('Escribe tu direccion');
+    }else if (!email.value.length) {
+        showAlert('Escribe tu email');
+    }  else if (!age.value.length) {
+        showAlert('Escribe tu edad');
+    }else if (phone.value.length < 9) {
+        showAlert('El telefono debe tener 9 digitos');
+    } else if (dni.value.length < 9) {
+        showAlert('El dni debe tener 9 caracteres');
     } else if (!tac.checked) {
-        showAlert('debes aceptar los terminos y condiciones');
+        showAlert('Debes aceptar los terminos y condiciones');
     } else {
-        // submit form
+        // submi form
         loader.style.display = 'block';
     }
 })
 
-// alert function
+// alerta con tiempo
 const showAlert = (msg) => {
     let alertBox = document.querySelector('.alert-box');
-    let alertMsg = document.querySelector('.alert-msg');
+    let alertMsg = document.querySelector('.error-msg');
     alertMsg.innerHTML = msg;
     alertBox.classList.add('show');
     setTimeout(() => {
         alertBox.classList.remove('show');
-    }, 3000);
+    }, 4000);
 }

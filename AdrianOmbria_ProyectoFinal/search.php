@@ -19,22 +19,24 @@
         <!-- productos -->
         <div class="product-containerr" style="grid-template-columns: repeat(3, 1fr);">
         <?php 
-            include "php/listaJuguetes.php";
-            $lista = obtenerListaJuguetes("Muñeca"); 
-            foreach($lista as $p):
-        ?>
+                    include "php/listaJuguetes.php";
+                    $lista = obtenerTodosJuguetes(); 
+                    foreach($lista as $p):
+            ?>
             <div class="product-card">
-                <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <span class="discount-tag">50% descuento</span>
-                    <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
-                    <button class="card-btn">Añadir al carrito</button>
+                    <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
+                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/product.php?id=<?php echo $p['id']?>">
+                        <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
+                    </a>
+                        <button class="card-btn">Añadir al carrito</button>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-brand"><?php echo $p['nombre']?></h3>
+                        <h3 class="product-short-des"><?php echo $p['marca']?></h3>
+                        <span class="price"><?php echo $p['precio']?>€</span>
+                    </div>
                 </div>
-                <div class="product-info">
-                    <h3 class="product-brand"><?php echo $p['nombre']?></h3>
-                    <h3 class="product-short-des"><?php echo $p['marca']?></h3>
-                    <span class="price"><?php echo $p['precio']*0.5?>€</span><span class="actual-price"><?php echo $p['precio']?>€</span>
-                </div>
-            </div>
+
             <?php endforeach; ?>
         </div>
     </section>

@@ -6,7 +6,7 @@ function obtenerHistorial(){
     $user_db = "root";
     $pass_db = "";
     $db_name = "oblectatio";
-    $tbl_name = "historialcompra";
+    $loggedUser = $_SESSION['loggedId'];
                                     
     $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
@@ -14,7 +14,7 @@ function obtenerHistorial(){
     die("La conexion falló: " . $conexion->connect_error);
     }
 
-    $sql = "SELECT * FROM $tbl_name";
+    $sql = "SELECT hc.id, u.nombre as usuario, hc.fecha, hc.direccion,hc.telefono,hc.preciototal  FROM historialcompra as hc join usuario as u on hc.id_usuario=u.id where u.id=".$loggedUser;
 
     $res=mysqli_query($conexion,$sql);
 
@@ -23,7 +23,10 @@ function obtenerHistorial(){
         $lista[$i]=$result;
         $i= $i + 1;
     }
-    return $lista;
+    if(isset($lista))
+        return $lista;
+    else
+        return null;
 }
 
                  

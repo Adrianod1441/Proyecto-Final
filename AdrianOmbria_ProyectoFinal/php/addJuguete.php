@@ -2,8 +2,17 @@
     session_start();
 
     $carrito = $_SESSION['carrito'];
+    $max=0;
+    foreach($carrito as $p):
+        if($p['id']>$max){
+            $max= $p['id'];    
+        }
+        $count++;
+    endforeach;
+    
+    $elemento["id"] = $max+1;
 
-    $elemento["id"] = count($_SESSION['carrito']);
+    
     $elemento["cantidad"] = $_POST['cantidad'];
     $elemento["nombre"] = $_POST['nombre'];
     $elemento["marca"] = $_POST['marca'];

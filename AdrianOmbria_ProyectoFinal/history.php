@@ -27,25 +27,29 @@
                         <th>Fecha</th>
                         <th>Precio Total</th>
                         <th>Direccion</th>
+                        <th>Telefono</th>
                         <th></th>
                     </thead>
                     <tbody>
                         <?php 
                             include "php/listaHistorial.php";
                             $historial = obtenerHistorial(); 
-                            foreach($historial as $p):
+                            if($historial != null){
+                                foreach($historial as $p):
                         ?>
                         <tr>
                             <td><input class="form-control" style="width: 170px;" id="id" readonly="readonly" name="id" type="text" value="<?php echo $p['id']?>"></td>
-                            <td><input class="form-control" style="width: 170px;" id="idusuario" readonly="readonly" name="idusuario" type="text" value="<?php echo $p['id_usuario']?>"></td>
+                            <td><input class="form-control" style="width: 170px;" id="idusuario" readonly="readonly" name="idusuario" type="text" value="<?php echo $p['usuario']?>"></td>
                             <td><input class="form-control" style="width: 240px;" id="fecha" readonly="readonly" name="fecha" type="timestamp" value="<?php echo $p['fecha']?>"></td>
                             <td><input class="form-control" style="width: 170px;" id="preciototal" readonly="readonly" name="preciototal" type="float" value="<?php echo $p['preciototal']?>€"></td>
                             <td><input class="form-control" style="width: 300px;" id="direccion" readonly="readonly" name="direccion" type="text" value="<?php echo $p['direccion']?>"></td>
+                            <td><input class="form-control" style="width: 170px;" id="telefono" readonly="readonly" name="telefono" type="text" value="<?php echo $p['telefono']?>"></td>
                             <td style=" background-color: #fff;">
                                 <a href="" style="text-decoration: none;"><img src="img/ojo.png" id="vista" alt="" style="width: 50px; height: 30px;"></a>
                             </td>
                         </tr>
-                        <?php endforeach; ?>
+                        <?php   endforeach; 
+                            }?>
                     </tbody>
                 </table>
             </center>
