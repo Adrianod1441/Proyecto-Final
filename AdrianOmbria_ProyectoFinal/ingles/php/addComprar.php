@@ -10,11 +10,11 @@ if(!$conexion){
 $user=$_SESSION["loggedId"];
 $direccion = $_POST['direccion'];
 $telefono = $_POST['telefono'];
-$precioTotal = $_POST['totalcompras'];
+$precioTotal = $_POST['preciototal'];
 
 $consulta = $conexion->prepare("INSERT INTO historialcompra (id_usuario, direccion, telefono, preciototal) VALUES (?, ?, ?, ?)");
     
-$consulta->bind_param('issb', $user, $direccion, $telefono, $precioTotal);
+$consulta->bind_param('issd', $user, $direccion, $telefono, $precioTotal);
 $resultado=$consulta->execute(); 
 $consulta->close();
 

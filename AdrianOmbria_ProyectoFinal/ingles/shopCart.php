@@ -71,7 +71,7 @@
                 <form action="php/addComprar.php" id="contactForm" method="POST">
                     <h3 style="margin-left: 20px;">Address</h3> <input id="direccion" style="margin-left: 20px; border: 2px solid black;" type="text" name="direccion" value=<?php echo $_SESSION['direccion']?>>
                     <h3 style="margin-left: 20px;">Phone</h3> <input id="telefono" style="margin-left: 20px; border: 2px solid black;" type="text" name="telefono" value=<?php echo $_SESSION['telefono']?>>
-                    <input id="totalcompra" type="hidden" name="totalcompras" value=<?php echo $totalCompra?>>
+                    <input id="preciototal" type="hidden" name="preciototal" value=<?php echo $totalCompra?>>
                     <button class="submit-btn" style="position: relative; top:10px; left: 280px; width: 200px; font-size: 20px; background-color: #c43131">Finalizar compra</button>
                 </form>
             </div>

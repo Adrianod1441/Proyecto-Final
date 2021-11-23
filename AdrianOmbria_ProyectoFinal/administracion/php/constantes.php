@@ -3,9 +3,9 @@
     
     define("db_name", "oblectatio");
     
-    define("user_db", "root");
+    define("user_db", "adrian");
     
-    define("pass_db", "");
+    define("pass_db", "@Proyecto1234");
 
     define("tamanoPaginas", 9);
 
