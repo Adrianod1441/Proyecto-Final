@@ -81,7 +81,7 @@
             ?>
             <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
                     </div>
@@ -108,7 +108,7 @@
             ?>
                 <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
                     </div>
@@ -136,7 +136,7 @@
             ?>
             <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
                     </div>

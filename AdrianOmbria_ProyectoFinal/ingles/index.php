@@ -26,12 +26,12 @@
         <div class="product-container">
         <?php 
             include "php/listaJuguetes.php";
-            $lista = obtenerTodosJuguetes(); 
+            $lista = obtenerTodosJuguetes(false, 0); 
             foreach($lista as $p):
         ?>
             <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                             <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                         </a>
                     </div>
@@ -70,13 +70,13 @@
         <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
         <div class="product-container">
             <?php 
-                    $lista = obtenerListaJuguetes("Peluche"); 
+                    $lista = obtenerListaJuguetes("Peluche",false, 0); 
                     foreach($lista as $p):
             ?>
             
                 <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
                     </div>
@@ -99,12 +99,12 @@
             <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
             <div class="product-container">
             <?php 
-                    $lista = obtenerListaJuguetes("Muñeca"); 
+                    $lista = obtenerListaJuguetes("Muñeca",false, 0); 
                     foreach($lista as $p):
             ?>
             <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
                     </div>
@@ -127,12 +127,12 @@
         <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
         <div class="product-container">
             <?php 
-                    $lista = obtenerListaJuguetes("Coche"); 
+                    $lista = obtenerListaJuguetes("Coche",false, 0); 
                     foreach($lista as $p):
             ?>
             <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
                     </div>

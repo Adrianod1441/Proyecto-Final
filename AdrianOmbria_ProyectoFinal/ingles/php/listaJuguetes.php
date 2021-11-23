@@ -1,20 +1,22 @@
 <?php
 
-function obtenerListaJuguetes($tipo){
+include "constantes.php";
+function obtenerListaJuguetes($tipo,$paginado, $paginaActual){
 
-    $host_db = "localhost";
-    $user_db = "root";
-    $pass_db = "";
-    $db_name = "oblectatio";
     $tbl_name = "juguete";
                                     
-    $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+    $conexion = new mysqli(host_db, user_db, pass_db, db_name);
 
     if ($conexion->connect_error) {
     die("La conexion falló: " . $conexion->connect_error);
     }
 
-    $sql = "SELECT * FROM $tbl_name WHERE tipo = '$tipo'";
+    if($paginado){
+        $posicionInicial = ($paginaActual - 1) * tamanoPaginas;
+        $sql = "SELECT * FROM $tbl_name WHERE tipo = '$tipo' limit $posicionInicial," . tamanoPaginas;
+    }else{
+        $sql = "SELECT * FROM $tbl_name WHERE tipo = '$tipo'";
+    }
 
     $res=mysqli_query($conexion,$sql);
 
@@ -26,21 +28,24 @@ function obtenerListaJuguetes($tipo){
     return $lista;
 }
 
-function obtenerTodosJuguetes(){
+function obtenerTodosJuguetes($paginado, $paginaActual){
 
-    $host_db = "localhost";
-    $user_db = "root";
-    $pass_db = "";
-    $db_name = "oblectatio";
     $tbl_name = "juguete";
                                     
-    $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+    $conexion = new mysqli(host_db, user_db, pass_db, db_name);
 
     if ($conexion->connect_error) {
     die("La conexion falló: " . $conexion->connect_error);
     }
+    
 
-    $sql = "SELECT * FROM $tbl_name";
+    if($paginado){
+        $posicionInicial = ($paginaActual - 1) * tamanoPaginas;
+        $sql = "SELECT * FROM $tbl_name limit $posicionInicial," . tamanoPaginas;
+    }else{
+        $sql = "SELECT * FROM $tbl_name";
+    }
+
 
     $res=mysqli_query($conexion,$sql);
 
@@ -54,13 +59,9 @@ function obtenerTodosJuguetes(){
 
 function obtenerJuguete($id){
 
-    $host_db = "localhost";
-    $user_db = "root";
-    $pass_db = "";
-    $db_name = "oblectatio";
     $tbl_name = "juguete";
                                     
-    $conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
+    $conexion = new mysqli(host_db, user_db, pass_db, db_name);
 
     if ($conexion->connect_error) {
     die("La conexion falló: " . $conexion->connect_error);
@@ -74,6 +75,44 @@ function obtenerJuguete($id){
 
     return $toy;
 }
+
+function contarJuguetes(){
+    
+    $tbl_name = "juguete";
+                                    
+    $conexion = new mysqli(host_db, user_db, pass_db, db_name);
+
+    if ($conexion->connect_error) {
+    die("La conexion falló: " . $conexion->connect_error);
+    }
+    
+    $sql = "SELECT count(*) FROM $tbl_name";
+
+    $res = mysqli_query($conexion,$sql);
+    
+    $result = mysqli_fetch_array($res);
+
+    return $result[0];
+}
+
+function contarJuguetesTipo($tipo){
+    
+    $tbl_name = "juguete";
+                                    
+    $conexion = new mysqli(host_db, user_db, pass_db, db_name);
+
+    if ($conexion->connect_error) {
+    die("La conexion falló: " . $conexion->connect_error);
+    }
+
+    $sql = "SELECT count(*) FROM $tbl_name WHERE tipo = '$tipo'";
+
+    $res=mysqli_query($conexion,$sql);
+    $result = mysqli_fetch_array($res);
+
+    return $result[0];
+}
+
 
 
                  

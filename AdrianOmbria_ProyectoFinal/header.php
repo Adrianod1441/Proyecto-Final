@@ -43,10 +43,10 @@ echo    '<div class="nav">
         </div>';
 echo    '<ul class="links-container">
             <li class="link-item"><a href="index.php" class="link">Inicio</a></li>
-            <li class="link-item"><a href="search.php" class="link">Juguetes</a></li>
-            <li class="link-item"><a href="wrist.php" class="link">Muñecas</a></li>
-            <li class="link-item"><a href="teddy.php" class="link">Peluches</a></li>
-            <li class="link-item"><a href="cars.php" class="link">Coches</a></li>
+            <li class="link-item"><a href="search.php?paginaActual=1" class="link">Juguetes</a></li>
+            <li class="link-item"><a href="wrist.php?paginaActual=1" class="link">Muñecas</a></li>
+            <li class="link-item"><a href="teddy.php?paginaActual=1" class="link">Peluches</a></li>
+            <li class="link-item"><a href="cars.php?paginaActual=1" class="link">Coches</a></li>
             <li class="link-item"><a href="aboutus.php" class="link">Sobre nosotros</a></li>
         </ul>'; 
         

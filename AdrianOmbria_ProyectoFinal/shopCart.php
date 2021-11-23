@@ -39,7 +39,7 @@
                 <div class="product-card" style="margin-bottom: -150px;">
                     <form action="php/deleteJuguete.php" method="POST">
                         <div class="product-image" style="border: 2px solid black; border-radius: 5px; width: 150px; height: 250px;">
-                            <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/product.php?id=<?php echo $p['id']?>">
+                            <a href="product.php?id=<?php echo $p['id']?>">
                                 <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="" style="width: 150px; height: 250px;">
                             </a>
                             <input id="id" type="hidden" name="id" value="<?php echo $p["id"]?>">
@@ -71,7 +71,7 @@
                 <form action="php/addComprar.php" id="contactForm" method="POST">
                     <h3 style="margin-left: 20px;">Direccion</h3> <input id="direccion" style="margin-left: 20px; border: 2px solid black;" type="text" name="direccion" value=<?php echo $_SESSION['direccion']?>>
                     <h3 style="margin-left: 20px;">Telefono</h3> <input id="telefono" style="margin-left: 20px; border: 2px solid black;" type="text" name="telefono" value=<?php echo $_SESSION['telefono']?>>
-                    <input id="totalcompra" type="hidden" name="totalcompras" value=<?php echo $totalCompra?>>
+                    <input id="preciototal" type="hidden" name="preciototal" value=<?php echo $totalCompra?>>
                     <button class="submit-btn" style="position: relative; top:10px; left: 280px; width: 200px; font-size: 20px; background-color: #c43131">Finalizar compra</button>
                 </form>
             </div>

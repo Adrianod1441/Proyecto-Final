@@ -21,7 +21,7 @@
         <div class="">
             <form id="contactForm" name="sentMessage" method="POST" action="php/login.php" style="margin-top: -50px;">
                 <input class="" id="nick" name="nick" type="text" placeholder="Your nick *" required="required">
-                <input class="" id="password" name="password" type="password" placeholder="Yor password *" required="required">
+                <input class="" id="password" name="password" type="password" placeholder="Your password *" required="required">
                 <button class="submit-btn" type="submit">Log in</button>
             </form>
         </div>

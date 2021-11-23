@@ -39,7 +39,7 @@
                 <div class="product-card" style="margin-bottom: -150px;">
                     <form action="php/deleteJuguete.php" method="POST">
                         <div class="product-image" style="border: 2px solid black; border-radius: 5px; width: 150px; height: 250px;">
-                            <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/ingles/product.php?id=<?php echo $p['id']?>">
+                            <a href="product.php?id=<?php echo $p['id']?>">
                                 <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="" style="width: 150px; height: 250px;">
                             </a>
                             <input id="id" type="hidden" name="id" value="<?php echo $p["id"]?>">

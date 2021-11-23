@@ -1,12 +1,8 @@
 <?php
 session_start();
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "oblectatio";
 $tbl_name = "juguete";
-
-$conexion = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
+                                    
+    $conexion = new mysqli(host_db, user_db, pass_db, db_name);
 if(!$conexion){
     die("No hay conexion: ".mysqli_connect_error());
 }
