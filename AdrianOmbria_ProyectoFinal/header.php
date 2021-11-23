@@ -2,8 +2,7 @@
 echo    '<div class="nav">
         <a href="index.php"><img src="img/logo.png" alt="" class="brand-logo"></a>
             <div class="nav-items">
-                <div class="search">
-                </div>';
+            <a href="ingles/index.php" style="text-decoration: none">EN</a>';
                 session_start();
                 if (isset($_SESSION["nick"])){
                     echo '<a>

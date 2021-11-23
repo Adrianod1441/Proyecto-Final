@@ -1,0 +1,105 @@
+.collection-containerr {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ebebeb;
+    font-family: 'roboto', sans-serif;
+    padding-top: 20px;
+}
+
+.containerr {
+    margin-top: 20px;
+}
+
+.contactForm1 {
+    position: relative;
+    left: -65%;
+    top: 40px;
+}
+
+.contactForm2 {
+    position: relative;
+    left: 70%;
+    top: -224px;
+}
+
+.contactForm3 {
+    position: relative;
+    left: 120%;
+    top: -224px;
+}
+
+
+/* formulario */
+
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"] {
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    color: #383838;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.01);
+    font-family: 'roboto', sans-serif;
+}
+
+::placeholder {
+    color: #383838;
+}
+
+.submit-btn {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0;
+}
+
+.submit-dlt {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #570000;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0;
+    position: relative;
+    top: -180px;
+}
+
+.submit-msg {
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0;
+}
