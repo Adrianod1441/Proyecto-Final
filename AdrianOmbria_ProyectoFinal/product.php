@@ -84,7 +84,6 @@
                     <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
-                        <button class="card-btn">Añadir al carrito</button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-brand"><?php echo $p['nombre']?></h3>
@@ -112,7 +111,6 @@
                     <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
-                        <button class="card-btn">Añadir al carrito</button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-brand"><?php echo $p['nombre']?></h3>
@@ -141,7 +139,6 @@
                     <a href="http://localhost/GitProyectoFinal/Proyecto-Final/AdrianOmbria_ProyectoFinal/product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
-                        <button class="card-btn">Añadir al carrito</button>
                     </div>
                     <div class="product-info">
                         <h3 class="product-brand"><?php echo $p['nombre']?></h3>

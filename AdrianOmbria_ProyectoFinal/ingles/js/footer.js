@@ -21,7 +21,7 @@ const createFooter = () => {
         <p class="info">Phone - 233 77 01 69</p>
         <div class="footer-social-container">
             <div class="">
-                <a href="#" class="social-link">terms & services</a>
+                <a href="aboutus.php" class="social-link">terms & services</a>
             </div>
             <div class="">
                 <a href="https://www.instagram.com/savethechildren_es/?hl=es" class="social-link">instagram</a>

@@ -21,8 +21,7 @@ const createFooter = () => {
         <p class="info">Teléfono - 233 77 01 69</p>
         <div class="footer-social-container">
             <div class="">
-                <a href="#" class="social-link">terminos & servicios</a>
-                <a href="#" class="social-link">pagina privada</a>
+                <a href="aboutus.php" class="social-link">terminos & servicios</a>
             </div>
             <div class="">
                 <a href="https://www.instagram.com/savethechildren_es/?hl=es" class="social-link">instagram</a>

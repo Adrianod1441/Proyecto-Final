@@ -29,13 +29,15 @@
                     <?php 
                         include "php/listaMensaje.php";
                         $lista = obtenerListaMensajes(); 
-                        foreach($lista as $p):
+                        if($lista != null){
+                            foreach($lista as $p):
                     ?>
                     <tr>
                         <td><input id="nick" readonly="readonly" type="text" name="nick" value="<?php echo $p['nick']?>" style="width: 100px;"></td>
                         <td><input id="texto" name="texto" readonly="readonly" type="text" value="<?php echo $p['texto']?>" style="width: 500px;"></td>
                     </tr>
-                    <?php endforeach; ?>
+                    <?php endforeach; 
+                    }?>
                 </form>
             </table>
         </center>
