@@ -24,5 +24,5 @@
 
     $_SESSION['carrito'] = $carrito;
 
-    header("Location: ../index.php");
+    header("Location: ../shopCart.php");
 ?>

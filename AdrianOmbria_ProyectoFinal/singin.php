@@ -28,7 +28,6 @@
         <a href="singup.php" class="link">¿no tienes una cuenta? registrate aqui</a>
     </div>
 
-    <script src="js/form.js"></script>
 
 </body>
 </html>

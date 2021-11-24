@@ -158,7 +158,6 @@
     <!-- script -->
     <script src="js/footer.js"></script>
     <script src="js/home.js"></script>
-    <script src="js/product.js"></script>
 
 </body>
 </html>

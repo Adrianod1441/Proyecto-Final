@@ -26,12 +26,10 @@ submitBtn.addEventListener('click', () => {
         showAlert('Write your email');
     } else if (!age.value.length) {
         showAlert('Write your age');
-    } else if (phone.value.length > 8) {
+    } else if (phone.value.length <= 8) {
         showAlert('The phone must have 9 digits');
-    } else if (dni.value.length > 8) {
+    } else if (dni.value.length <= 8) {
         showAlert('The DNI must have 9 characters');
-    } else if (!tac.checked) {
-        showAlert('You must accept the terms & conditions');
     } else {
         // submi form
         loader.style.display = 'block';

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oblectatio - Login</title>
-    <link rel="stylesheet" href="css/singup.css">
+    <link rel="stylesheet" href="../css/singup.css">
 </head>
 <body>
     
@@ -27,8 +27,6 @@
         </div>
         <a href="singup.php" class="link">¿don't you have an account? sing up here</a>
     </div>
-
-    <script src="js/form.js"></script>
 
 </body>
 </html>

@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="css/singup.css">
 </head>
 <body>
-    
-    <img src="img/loader.gif" alt="" class="loader">
 
     <div class="alert-box">
         <img src="img/error.png" alt="" class="alert-img">

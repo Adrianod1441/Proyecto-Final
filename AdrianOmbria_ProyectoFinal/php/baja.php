@@ -23,7 +23,7 @@ $stmt = $conexion->prepare("DELETE FROM $tbl_name WHERE nick = ?");
             header("Location: ../index.php");
             
         }else{
-            
+            header("Location: ../perfil.php");
         }
 
 ?>

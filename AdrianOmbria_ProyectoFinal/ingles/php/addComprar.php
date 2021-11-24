@@ -12,6 +12,7 @@ $direccion = $_POST['direccion'];
 $telefono = $_POST['telefono'];
 $precioTotal = $_POST['preciototal'];
 
+
 $consulta = $conexion->prepare("INSERT INTO historialcompra (id_usuario, direccion, telefono, preciototal) VALUES (?, ?, ?, ?)");
     
 $consulta->bind_param('issd', $user, $direccion, $telefono, $precioTotal);
@@ -20,5 +21,5 @@ $consulta->close();
 
 $_SESSION['carrito'] = (array)null;
 
-    header("Location: ../index.php");
+     header("Location: ../history.php");
 ?>

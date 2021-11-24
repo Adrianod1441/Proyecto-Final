@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oblectatio - History</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/table.css">
 
     <script type="text/javascript">
     </script>
@@ -31,7 +31,7 @@
                     </thead>
                     <tbody>
                         <?php 
-                            include "php/listaHistorial.php";
+                            include "../php/listaHistorial.php";
                             $historial = obtenerHistorial(); 
                             if($historial != null){
                                 foreach($historial as $p):
@@ -57,7 +57,6 @@
     <footer></footer>
 
     <!-- script -->
-    <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/home.js"></script>
 </body>

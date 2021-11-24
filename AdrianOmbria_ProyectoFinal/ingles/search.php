@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search products for</title>
-    <link rel="stylesheet" href="css/search.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 <body>
 
@@ -19,7 +19,7 @@
         <!-- productos -->
         <div class="product-containerr" style="grid-template-columns: repeat(3, 1fr);">
         <?php 
-                    include "php/listaJuguetes.php";
+                    include "../php/listaJuguetes.php";
                     $numeroJuguetes = contarJuguetes();
                     $numerPaginas = ceil($numeroJuguetes / tamanoPaginas);
                     $lista = obtenerTodosJuguetes(true,$_GET["paginaActual"]); 
@@ -61,7 +61,6 @@
     <!-- script -->
     <script src="js/footer.js"></script>
     <script src="js/home.js"></script>
-    <script src="js/product.js"></script>
     
 </body>
 </html>

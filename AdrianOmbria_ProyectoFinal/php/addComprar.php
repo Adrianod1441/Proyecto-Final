@@ -21,5 +21,5 @@ $consulta->close();
 
 $_SESSION['carrito'] = (array)null;
 
-     header("Location: ../index.php");
+     header("Location: ../history.php");
 ?>

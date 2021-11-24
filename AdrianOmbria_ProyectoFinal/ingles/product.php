@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oblectatio - Toy</title>
-    <link rel="stylesheet" href="css/product.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 <body>
     <!-- menu -->
@@ -16,7 +16,7 @@
     <!-- informacion del producto -->
 
     <?php 
-        include "php/listaJuguetes.php";
+        include "../php/listaJuguetes.php";
         $toy = obtenerJuguete($_GET["id"]); 
     ?>
 
@@ -158,7 +158,6 @@
     <!-- script -->
     <script src="js/footer.js"></script>
     <script src="js/home.js"></script>
-    <script src="js/product.js"></script>
 
 </body>
 </html>

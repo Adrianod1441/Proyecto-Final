@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oblectatio - Cart</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/perfil.css">
 
     <script type="text/javascript">
             function confirmarBajaJuguete() {
                 var mensaje = confirm("¿Desea Eliminar el juguete del carrito?");
-                location.href="php/bajaJuguete.php";
+                location.href="../php/bajaJuguete.php";
                 
                 if (mensaje) {
                     alert("¡Juguete eliminado!");
@@ -37,7 +37,7 @@
                 foreach($_SESSION['carrito'] as $p):
             ?>
                 <div class="product-card" style="margin-bottom: -150px;">
-                    <form action="php/deleteJuguete.php" method="POST">
+                    <form action="../php/deleteJuguete.php" method="POST">
                         <div class="product-image" style="border: 2px solid black; border-radius: 5px; width: 150px; height: 250px;">
                             <a href="product.php?id=<?php echo $p['id']?>">
                                 <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="" style="width: 150px; height: 250px;">
@@ -69,16 +69,15 @@
                  <h1 style="position: relative; margin-top:20px; margin-left: 20px; margin-bottom:15px;">Total purchase: <?php echo $totalCompra?>€</h1>
 
                 <form action="php/addComprar.php" id="contactForm" method="POST">
-                    <h3 style="margin-left: 20px;">Address</h3> <input id="direccion" style="margin-left: 20px; border: 2px solid black;" type="text" name="direccion" value=<?php echo $_SESSION['direccion']?>>
-                    <h3 style="margin-left: 20px;">Phone</h3> <input id="telefono" style="margin-left: 20px; border: 2px solid black;" type="text" name="telefono" value=<?php echo $_SESSION['telefono']?>>
+                    <h3 style="margin-left: 20px;">Address</h3> <input id="direccion" style="margin-left: 20px; border: 2px solid black;" type="text" name="direccion" value="<?php echo $_SESSION['direccion']?>">
+                    <h3 style="margin-left: 20px;">Phone</h3> <input id="telefono" style="margin-left: 20px; border: 2px solid black;" type="text" name="telefono" value="<?php echo $_SESSION['telefono']?>">
                     <input id="preciototal" type="hidden" name="preciototal" value=<?php echo $totalCompra?>>
-                    <button class="submit-btn" style="position: relative; top:10px; left: 280px; width: 200px; font-size: 20px; background-color: #c43131">Finalizar compra</button>
+                    <button class="submit-btn" style="position: relative; top:10px; left: 280px; width: 200px; font-size: 20px; background-color: #c43131">Finalize purchase</button>
                 </form>
             </div>
     </section>
 
     <!-- script -->
-    <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
     <script src="js/home.js"></script>
 </body>
