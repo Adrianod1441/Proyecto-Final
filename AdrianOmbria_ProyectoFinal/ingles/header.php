@@ -1,12 +1,12 @@
 <?php 
 echo    '<div class="nav">
-        <a href="index.php"><img src="img/logo.png" alt="" class="brand-logo"></a>
+        <a href="index.php"><img src="../img/logo.png" alt="" class="brand-logo"></a>
             <div class="nav-items">
             <a href="../index.php" style="text-decoration: none; color: black;">ES</a>';
                 session_start();
                 if (isset($_SESSION["nick"])){
                     echo '<a>
-                    <img src="img/login.png" id="user-img" alt="">
+                    <img src="../img/login.png" id="user-img" alt="">
                     <div class="login-logout-popup hide">
                         <p class="account-info">Hello, '; if (isset($_SESSION['nick'])){ 
                             echo $_SESSION['nick'];} echo '</p>
@@ -18,7 +18,7 @@ echo    '<div class="nav">
                     </a>';
                 }else{
                     echo '<a>
-                    <img src="img/login.png" id="user-img" alt="">
+                    <img src="../img/login.png" id="user-img" alt="">
                     <div class="login-logout-popup hide">
                         <a href="singin.php"><button class="btn" id="login-btn">Log in</button></a>
                     </div>
@@ -29,7 +29,7 @@ echo    '<div class="nav">
                     }else{
                         
                     echo '<a href="shopCart.php" style="color: black;">
-                        <img src="img/carrito.png" id="carr-img" alt="">';
+                        <img src="../img/carrito.png" id="carr-img" alt="">';
                             if(isset($_SESSION["nick"])){
                                 if(count($_SESSION['carrito']) != 0){
                                     echo count($_SESSION['carrito']);

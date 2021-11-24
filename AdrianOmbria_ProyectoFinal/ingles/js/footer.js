@@ -3,7 +3,7 @@ const createFooter = () => {
 
     footer.innerHTML = `
     <div class="footer-content">
-    <a href="index.php" class="link"><img src="img/logo-blanco.png" class="logo" alt=""></a>
+    <a href="index.php" class="link"><img src="../img/logo-blanco.png" class="logo" alt=""></a>
         <div class="footer-ul-container">
             <ul class="category">
                 <li class="category-tittle">toys</li>
