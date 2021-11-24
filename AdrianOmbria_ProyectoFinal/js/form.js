@@ -9,7 +9,7 @@ const phone = document.querySelector('#telefono');
 const dni = document.querySelector('#dni');
 const direction = document.querySelector('#direccion');
 const age = document.querySelector('#edad');
-const tac = document.querySelector('#terms-and-cond');
+const submit = document.querySelector('#contactForm');
 
 submitBtn.addEventListener('click', () => {
     if (nick.value.length < 3) {
@@ -32,7 +32,7 @@ submitBtn.addEventListener('click', () => {
         showAlert('El dni debe tener 9 caracteres');
     } else {
         // submi form
-        loader.style.display = 'block';
+        submit.submit();
     }
 })
 

@@ -17,6 +17,7 @@ $email = $_POST['email'];
 $edad = $_POST['edad'];
 $telefono = $_POST['telefono'];
 $dni = $_POST['dni'];
+$password = hash('sha512',$password);
 
 $consulta = $conexion->prepare("INSERT INTO $tbl_name (nick, password, nombre, apellidos, direccion, email, edad, telefono, dni) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
     

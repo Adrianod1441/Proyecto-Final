@@ -16,7 +16,7 @@
 
     <div class="container">
         <img src="img/logo.png" alt="" class="logo">
-            <form id="contactForm" name="sentMessage" method="POST" action="php/registro.php" style="margin-top: -50px;">
+            <form id="contactForm" name="contactForm" method="POST" action="php/registro.php" style="margin-top: -50px;">
                 <input id="nick" type="text" name="nick" placeholder="Tu nick *" required="required">
                 <input id="password" type="password" name="password" placeholder="Tu contraseña *" required="required">
                 <input id="nombre" type="text" name="nombre" placeholder="Tu nombre *" required="required">
@@ -26,7 +26,7 @@
                 <input id="edad" type="number" name="edad" placeholder="Tu edad *" required="required">
                 <input id="telefono" type="text" name="telefono" placeholder="Tu telefono *" required="required">
                 <input id="dni" type="text" name="dni" placeholder="Tu dni *" required="required">
-                <button class="submit-btn" type="submit">crear cuenta</button>
+                <button class="submit-btn" type="button">crear cuenta</button>
             </form>
         <a href="singin.php" class="link" style="margin-bottom: 20px;">¿ya tienes una cuenta? logueate aqui</a>
     </div>

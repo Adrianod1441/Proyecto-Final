@@ -10,8 +10,8 @@ if ($conexion->connect_error) {
 }
 
 $nick = $_SESSION['nick'];
-$password = $_POST['password'];
-$passwordNueva = $_POST['passwordNueva'];
+$password = hash('sha512',$_POST['password']);
+$passwordNueva = hash('sha512',$_POST['passwordNueva']);
 
 $sql = "SELECT password FROM $tbl_name WHERE nick = '$nick'";
 

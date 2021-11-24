@@ -11,7 +11,7 @@ if ($conexion->connect_error) {
 }
 
 $nick = $_POST['nick'];
-$contrasena = $_POST['password'];
+$contrasena = hash('sha512',$_POST['password']);
 
 $sql = "SELECT * FROM $tbl_name WHERE nick = '$nick' AND password = '$contrasena'";
 

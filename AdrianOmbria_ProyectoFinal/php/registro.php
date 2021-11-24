@@ -1,12 +1,15 @@
 <?php
 include "constantes.php";
+include 'cifrado.php';
+
 session_start();
+
 $tbl_name = "usuario";
                                     
     $conexion = new mysqli(host_db, user_db, pass_db, db_name);
-if(!$conexion){
-    die("No hay conexion: ".mysqli_connect_error());
-}
+    if(!$conexion){
+        die("No hay conexion: ".mysqli_connect_error());
+    }
 
 $nick = $_POST['nick'];
 $password = $_POST['password'];
@@ -17,6 +20,7 @@ $email = $_POST['email'];
 $edad = $_POST['edad'];
 $telefono = $_POST['telefono'];
 $dni = $_POST['dni'];
+$password = hash('sha512',$password);
 
 $consulta = $conexion->prepare("INSERT INTO $tbl_name (nick, password, nombre, apellidos, direccion, email, edad, telefono, dni) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
     
