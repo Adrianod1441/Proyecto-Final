@@ -1,4 +1,5 @@
 <?php
+include "constantes.php";
 
 session_start();
 
@@ -18,14 +19,12 @@ $codigo = $_POST['codigo'];
 $lugarcreacion = $_POST['lugarcreacion'];
 $precio = $_POST['precio'];
 $descripcion = $_POST['descripcion'];
-$fechacreacion = $_POST['fechacreacion'];
-$imagen = $_POST['imagen'];
 
 $sql = "UPDATE $tbl_name SET nombre='$nombre', marca='$marca', tipo='$tipo'
-, codigo='$codigo', lugarcreacion='$lugarcreacion', precio='$precio',  descripcion='$descripcion' WHERE id='$id'";
+, codigo='$codigo', lugarcreacion='$lugarcreacion', precio=$precio,  descripcion='$descripcion' WHERE id='$id'";
 
 $result = $conexion->query($sql);
-
+echo($sql);
  if ($result) { 
     $p['id'] = $id;
     $p['nombre'] = $nombre;
@@ -37,7 +36,7 @@ $result = $conexion->query($sql);
     $p['descripcion'] = $descripcion;
     $p['start'] = time();
     $p['expire'] = $p['start'] + (5 * 60);
-    header("Location: ../toys.php");   
+     header("Location: ../toys.php");   
 
  } else { 
    header("Location: ../toys.php");

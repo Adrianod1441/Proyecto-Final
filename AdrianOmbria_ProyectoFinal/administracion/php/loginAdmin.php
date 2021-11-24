@@ -1,4 +1,5 @@
 <?php
+include "constantes.php";
 session_start();
 
 $tbl_name = "admin";

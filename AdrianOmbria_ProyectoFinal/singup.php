@@ -28,8 +28,6 @@
                 <input id="edad" type="number" name="edad" placeholder="Tu edad *" required="required">
                 <input id="telefono" type="text" name="telefono" placeholder="Tu telefono *" required="required">
                 <input id="dni" type="text" name="dni" placeholder="Tu dni *" required="required">
-                <input type="checkbox" checked id="terms-and-cond" class="checkbox">
-                <label for="terms-and-cond">acepta los <a href="">terminos y condiciones</a></label>
                 <button class="submit-btn" type="submit">crear cuenta</button>
             </form>
         <a href="singin.php" class="link" style="margin-bottom: 20px;">¿ya tienes una cuenta? logueate aqui</a>

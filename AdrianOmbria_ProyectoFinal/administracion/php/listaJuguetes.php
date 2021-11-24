@@ -1,5 +1,5 @@
 <?php
-
+include "constantes.php";
 function obtenerListaJuguetes(){
 
     $tbl_name = "juguete";

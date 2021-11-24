@@ -49,15 +49,15 @@
 
     <!-- coleccion -->
     <section class="collection-container">
-        <a href="teddy.php" class="collection">
+        <a href="teddy.php?paginaActual=1" class="collection">
             <img src="img/peluches-collection.jpg" alt="" class="">
             <p class="collection-tittle">peluches</p>
         </a>
-        <a href="wrist.php" class="collection">
+        <a href="wrist.php?paginaActual=1" class="collection">
             <img src="img/muñecas-collection.jpg" alt="" class="">
             <p class="collection-tittle">muñecas</p>
         </a>
-        <a href="cars.php" class="collection">
+        <a href="cars.php?paginaActual=1" class="collection">
             <img src="img/coches-collection.jpg" alt="" class="">
             <p class="collection-tittle">coches</p>
         </a>

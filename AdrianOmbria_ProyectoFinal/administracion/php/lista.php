@@ -1,5 +1,5 @@
 <?php
-
+include "constantes.php";
 function obtenerListaUsuarios(){
 
     $tbl_name = "usuario";

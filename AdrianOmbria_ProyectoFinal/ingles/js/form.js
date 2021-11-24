@@ -1,5 +1,3 @@
-const loader = document.querySelector('.loader');
-
 // select inputs
 const submitBtn = document.querySelector('.submit-btn');
 const nick = document.querySelector('#nick');
@@ -18,19 +16,19 @@ submitBtn.addEventListener('click', () => {
         showAlert('The nickname must have more than 3 characters');
     } else if (password.value.length < 8) {
         showAlert('The password must have more than 8 characters');
-    }  else if (!nombre.value.length) {
+    } else if (!nombre.value.length) {
         showAlert('Write your name');
     } else if (!surnames.value.length) {
         showAlert('Write your surname');
     } else if (!direction.value.length) {
         showAlert('Write your address');
-    }else if (!email.value.length) {
+    } else if (!email.value.length) {
         showAlert('Write your email');
-    }  else if (!age.value.length) {
+    } else if (!age.value.length) {
         showAlert('Write your age');
-    }else if (phone.value.length == 9) {
+    } else if (phone.value.length > 8) {
         showAlert('The phone must have 9 digits');
-    } else if (dni.value.length == 9) {
+    } else if (dni.value.length > 8) {
         showAlert('The DNI must have 9 characters');
     } else if (!tac.checked) {
         showAlert('You must accept the terms & conditions');

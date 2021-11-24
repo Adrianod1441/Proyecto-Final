@@ -28,7 +28,6 @@
                         <th>Precio Total</th>
                         <th>Direccion</th>
                         <th>Telefono</th>
-                        <th></th>
                     </thead>
                     <tbody>
                         <?php 
@@ -44,9 +43,7 @@
                             <td><input class="form-control" style="width: 170px;" id="preciototal" readonly="readonly" name="preciototal" type="float" value="<?php echo $p['preciototal']?>€"></td>
                             <td><input class="form-control" style="width: 300px;" id="direccion" readonly="readonly" name="direccion" type="text" value="<?php echo $p['direccion']?>"></td>
                             <td><input class="form-control" style="width: 170px;" id="telefono" readonly="readonly" name="telefono" type="text" value="<?php echo $p['telefono']?>"></td>
-                            <td style=" background-color: #fff;">
-                                <a href="" style="text-decoration: none;"><img src="img/ojo.png" id="vista" alt="" style="width: 50px; height: 30px;"></a>
-                            </td>
+                            
                         </tr>
                         <?php   endforeach; 
                             }?>

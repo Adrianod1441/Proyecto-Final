@@ -76,7 +76,7 @@
         <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
         <div class="product-container">
             <?php 
-                    $lista = obtenerListaJuguetes("Coche"); 
+                    $lista = obtenerListaJuguetes("Coche",false, 0); 
                     foreach($lista as $p):
             ?>
             <div class="product-card">
@@ -103,7 +103,7 @@
         <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
         <div class="product-container">
             <?php 
-                    $lista = obtenerListaJuguetes("Muñeca"); 
+                    $lista = obtenerListaJuguetes("Muñeca",false, 0); 
                     foreach($lista as $p):
             ?>
                 <div class="product-card">
@@ -131,7 +131,7 @@
         <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
         <div class="product-container">
             <?php 
-                    $lista = obtenerListaJuguetes("Peluche"); 
+                    $lista = obtenerListaJuguetes("Peluche",false, 0); 
                     foreach($lista as $p):
             ?>
             <div class="product-card">

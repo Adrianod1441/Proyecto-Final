@@ -7,9 +7,9 @@ const createFooter = () => {
         <div class="footer-ul-container">
             <ul class="category">
                 <li class="category-tittle">juguetes</li>
-                <li><a href="teddy.php" class="footer-link">peluches</a></li>
-                <li><a href="wrist.php" class="footer-link">muñecas</a></li>
-                <li><a href="cars.php" class="footer-link">coches</a></li>
+                <li><a href="teddy.php?paginaActual=1" class="footer-link">peluches</a></li>
+                <li><a href="wrist.php?paginaActual=1" class="footer-link">muñecas</a></li>
+                <li><a href="cars.php?paginaActual=1" class="footer-link">coches</a></li>
             </ul>
         </div>
     </div>

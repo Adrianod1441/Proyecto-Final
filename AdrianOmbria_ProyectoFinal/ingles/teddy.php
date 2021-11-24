@@ -27,7 +27,7 @@
         ?>
             <div class="product-card">
                     <div class="product-image" style="border: 2px solid black; border-radius: 5px;">
-                    <a href="ingles/product.php?id=<?php echo $p['id']?>">
+                    <a href="product.php?id=<?php echo $p['id']?>">
                         <img src=" <?php echo $p['imagen']?> " class="product-thumb" alt="">
                     </a>
                     </div>
@@ -42,13 +42,13 @@
                     if ($numeroJuguetes <= tamanoPaginas || $_GET["paginaActual"] == $numerPaginas){
                         echo '<a href="" class="nxt-btn" disabled style="width: 50px; height: 50px; top:700px;"><img src="img/arrow.png" alt=""></a>';
                     }else{
-                        echo '<a href="search.php?paginaActual='; echo $_GET["paginaActual"] + 1; echo'" class="nxt-btn" style="width: 50px; height: 50px; top:700px;"><img src="img/arrow.png" alt=""></a>';
+                        echo '<a href="teddy.php?paginaActual='; echo $_GET["paginaActual"] + 1; echo'" class="nxt-btn" style="width: 50px; height: 50px; top:700px;"><img src="img/arrow.png" alt=""></a>';
                     }
 
                     if ($numeroJuguetes <= tamanoPaginas || $_GET["paginaActual"] == 1){
                         echo '<a href="" class="pre-btn" disabled style=" height: 50px; top:700px;"><img src="img/arrow.png" alt=""></a>';
                     }else{
-                        echo '<a href="search.php?paginaActual='; echo $_GET["paginaActual"] - 1; echo'" class="pre-btn" style=" height: 50px; top:700px;"><img src="img/arrow.png" alt=""></a>';
+                        echo '<a href="teddy.php?paginaActual='; echo $_GET["paginaActual"] - 1; echo'" class="pre-btn" style=" height: 50px; top:700px;"><img src="img/arrow.png" alt=""></a>';
                     }
                 ?>
         </div>
