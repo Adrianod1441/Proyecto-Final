@@ -42,11 +42,12 @@
                 <button class="submit-btn" type="submit">Editar usuario</button>
             </form>
 
-            <form method="post" action="php/editarPwd.php" class="contactForm2" style="position: relative; left: 80%; top: -224px;">
+            <form method="post" id="contactForm2" name="contactForm2" action="php/editarPwd.php" class="contactForm2" style="position: relative; left: 80%; top: -325px;">
                 <h3>Contraseña Antigua</h3> <input id="password" type="password" name="password" placeholder="Escriba aqui su antigua contraseña...">
                 <h3>Contraseña Nueva</h3> <input id="passwordNueva" type="password" name="passwordNueva" placeholder="Escriba aqui su nueva contraseña...">
+                <h3>Repetir Contraseña Nueva</h3> <input id="passwordNuevaRep" type="password" name="passwordNuevaRep" placeholder="Repita aqui su nueva contraseña...">
 
-                <button class="submit-btn" type="submit">Editar contraseña</button>
+                <button class="submit-btn2" type="button">Editar contraseña</button>
             </form>
 
                 <button class="submit-dlt" onclick="confirmarBaja()">Darse de baja</button>

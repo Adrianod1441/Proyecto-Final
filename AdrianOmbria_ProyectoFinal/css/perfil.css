@@ -72,6 +72,21 @@ input[type="date"] {
     margin: 20px 0;
 }
 
+.submit-btn2 {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 20px 0;
+}
+
 .submit-dlt {
     width: 300px;
     height: 40px;
@@ -86,7 +101,8 @@ input[type="date"] {
     display: block;
     margin: 20px 0;
     position: relative;
-    top: -180px;
+    top: -300px;
+    margin-bottom: -220px;
 }
 
 .submit-msg {
