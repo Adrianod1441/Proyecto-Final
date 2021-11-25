@@ -27,9 +27,10 @@
     height: auto;
     margin: 15px 0 30px;
 }
-.des{
+
+.des {
     width: 100%;
-    height: 20px;
+    height: auto;
     line-height: 20px;
     overflow: hidden;
     opacity: 0.5;
