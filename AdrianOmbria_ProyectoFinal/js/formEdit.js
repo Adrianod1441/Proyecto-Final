@@ -1,7 +1,6 @@
 // select inputs
-const submitBtn = document.querySelector('.submit-btn');
+const submitBtn1 = document.querySelector('.submit-btn');
 const nick = document.querySelector('#nick');
-const password = document.querySelector('#password');
 const nombre = document.querySelector('#nombre');
 const surnames = document.querySelector('#apellidos');
 const email = document.querySelector('#email');
@@ -9,35 +8,33 @@ const phone = document.querySelector('#telefono');
 const dni = document.querySelector('#dni');
 const direction = document.querySelector('#direccion');
 const age = document.querySelector('#edad');
-const submit = document.querySelector('#contactForm');
+const submit1 = document.querySelector('#contactForm');
 
-submitBtn.addEventListener('click', () => {
+submitBtn1.addEventListener('click', () => {
     if (nick.value.length < 3) {
-        showAlert('The nickname must have more than 3 characters');
-    } else if (password.value.length < 8) {
-        showAlert('The password must be have more than 8 characters');
+        showAlert1('El nick debe tener mas de 3 caracteres');
     } else if (!nombre.value.length) {
-        showAlert('Write your name');
+        showAlert1('Escribe tu nombre');
     } else if (!surnames.value.length) {
-        showAlert('Write your surname');
+        showAlert1('Escribe tus apellidos');
     } else if (!direction.value.length) {
-        showAlert('Write your address');
+        showAlert1('Escribe tu direccion');
     } else if (!email.value.length) {
-        showAlert('Write your email');
+        showAlert1('Escribe tu email');
     } else if (!age.value.length) {
-        showAlert('Write your age');
+        showAlert1('Escribe tu edad');
     } else if (phone.value.length <= 8) {
-        showAlert('The phone must have 9 digits');
+        showAlert1('El telefono debe tener 9 digitos');
     } else if (dni.value.length <= 8) {
-        showAlert('The DNI must have have 9 characters');
+        showAlert1('El dni debe tener 9 caracteres');
     } else {
         // submi form
-        submit.submit();
+        submit1.submit();
     }
 })
 
 // alerta con tiempo
-const showAlert = (msg) => {
+const showAlert1 = (msg) => {
     let alertBox = document.querySelector('.alert-box');
     let alertMsg = document.querySelector('.error-msg');
     alertMsg.innerHTML = msg;

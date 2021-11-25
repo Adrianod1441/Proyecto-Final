@@ -5,7 +5,7 @@ const submit = document.querySelector('#contactForm2');
 
 submitBtn.addEventListener('click', () => {
     if (passNueva.value != passNuevaRep.value) {
-        showAlert('No has repetido bien la contraseña nueva');
+        showAlert('You have not repeated the new password correctly');
 
     } else {
         submit.submit();
