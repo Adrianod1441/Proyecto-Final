@@ -26,7 +26,7 @@
     <?php include 'header.php'?>
 
     <div class="alert-box">
-        <img src="img/error.png" alt="" class="alert-img">
+        <img src="../img/error.png" alt="" class="alert-img">
         <p class="error-msg">Error Message</p>
     </div>
 
