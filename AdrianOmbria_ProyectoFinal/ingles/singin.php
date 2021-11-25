@@ -11,13 +11,9 @@
     
     <img src="img/loader.gif" alt="" class="loader">
 
-    <div class="alert-box">
-        <img src="img/error.png" alt="" class="alert-img">
-        <p class="error-msg">Error message</p>
-    </div>
 
     <div class="container">
-        <img src="img/logo.png" alt="" class="logo">
+        <img src="../img/logo.png" alt="" class="logo">
         <div class="">
             <form id="contactForm" name="sentMessage" method="POST" action="php/login.php" style="margin-top: -50px;">
                 <input class="" id="nick" name="nick" type="text" placeholder="Your nick *" required="required">

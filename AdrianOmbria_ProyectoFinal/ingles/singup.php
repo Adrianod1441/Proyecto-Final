@@ -10,12 +10,12 @@
 <body>
 
     <div class="alert-box">
-        <img src="img/error.png" alt="" class="alert-img">
+        <img src="../img/error.png" alt="" class="alert-img">
         <p class="error-msg">Error message</p>
     </div>
 
     <div class="container">
-        <img src="img/logo.png" alt="" class="logo">
+        <img src="../img/logo.png" alt="" class="logo">
             <form id="contactForm" name="contactForm" method="POST" action="php/registro.php" style="margin-top: -50px;">
                 <input id="nick" type="text" name="nick" placeholder="Your nick *" required="required">
                 <input id="password" type="password" name="password" placeholder="Your password *" required="required">
