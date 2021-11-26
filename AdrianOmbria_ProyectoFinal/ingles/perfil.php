@@ -45,10 +45,10 @@
                 <h3>Phone</h3> <input id="telefono" type="text" name="telefono" value="<?php echo $_SESSION['telefono']?>">
                 <h3>DNI</h3> <input id="dni" type="text" name="dni" value="<?php echo $_SESSION['dni']?>">
                 
-                <button class="submit-btn" type="button">Editar usuario</button>
+                <button class="submit-btn" type="button">Edit user</button>
             </form>
 
-            <form method="post" action="../php/editarPwd.php" class="contactForm2" style="position: relative; left: 80%; top: -325px;">
+            <form method="post" id="contactForm2" name="contactForm2" action="../php/editarPwd.php" class="contactForm2" style="position: relative; left: 80%; top: -325px;">
                 <h3>Old Password</h3> <input id="password" type="password" name="password" placeholder="Write your old password...">
                 <h3>New Password</h3> <input id="passwordNueva" type="password" name="passwordNueva" placeholder="Write your new password...">
                 <h3>Repeat New Password</h3> <input id="passwordNuevaRep" type="password" name="passwordNuevaRep" placeholder="Repeat your new password...">
