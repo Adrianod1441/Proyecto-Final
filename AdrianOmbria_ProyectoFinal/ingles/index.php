@@ -21,8 +21,8 @@
     <section class="product">
         
         <h2 class="product-category">Our Toys</h2>
-        <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+        <button class="pre-btn"><img src="../img/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="../img/arrow.png" alt=""></button>
         
         <div class="product-container">
         <?php 
