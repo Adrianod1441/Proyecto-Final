@@ -67,8 +67,8 @@
     <!-- contenedor peluches -->
     <section class="product">
         <h2 class="product-category">Teddies</h2>
-        <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+        <button class="pre-btn"><img src="../img/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="../img/arrow.png" alt=""></button>
         <div class="product-container">
             <?php 
                     $lista = obtenerListaJuguetes("Peluche",false, 0); 
@@ -96,8 +96,8 @@
     <!-- contenedor muñecas -->
     <section class="product">
             <h2 class="product-category">Wrists</h2>
-            <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-            <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+            <button class="pre-btn"><img src="../img/arrow.png" alt=""></button>
+            <button class="nxt-btn"><img src="../img/arrow.png" alt=""></button>
             <div class="product-container">
             <?php 
                     $lista = obtenerListaJuguetes("Muñeca",false, 0); 
@@ -124,8 +124,8 @@
     <!-- contenedor coches -->
     <section class="product">
         <h2 class="product-category">Cars</h2>
-        <button class="pre-btn"><img src="img/arrow.png" alt=""></button>
-        <button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+        <button class="pre-btn"><img src="../img/arrow.png" alt=""></button>
+        <button class="nxt-btn"><img src="../img/arrow.png" alt=""></button>
         <div class="product-container">
             <?php 
                     $lista = obtenerListaJuguetes("Coche",false, 0); 
